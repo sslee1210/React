@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.borderTop {
+  border-top: 1px solid #ddd;
+  margin: 10px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #ddd;
+  margin: 10px;
+}

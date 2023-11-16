@@ -1,0 +1,30 @@
+@charset "utf-8";
+.title {
+  background-color: #ddd;
+  padding-left: 30px;
+  color: #bb4545;
+}
+
+.ul {
+  list-style: none;
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.li1 {
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(163, 78, 21);
+}
+
+.li2 {
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(163, 78, 21);
+}
+
+.li3 {
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(163, 78, 21);
+}
