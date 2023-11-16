@@ -24,8 +24,8 @@ const Map = () => {
 
       {/* <li>라떼</li> <li>아메리카노</li> ... */}
       <ul>
-        {coffeeList.map((coffee) => (
-          <li key={coffee.id}></li>
+        {data.map((coffee) => (
+          <li key={coffee.id}>{coffee.name}</li>
         ))}
       </ul>
     </div>
