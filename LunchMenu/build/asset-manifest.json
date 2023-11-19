@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react_study/static/css/main.efada985.css",
+    "main.js": "/react_study/static/js/main.190aa4fb.js",
+    "static/media/mr.back.png": "/react_study/static/media/mr.back.2b1c258299139a6e76fb.png",
+    "index.html": "/react_study/index.html",
+    "main.efada985.css.map": "/react_study/static/css/main.efada985.css.map",
+    "main.190aa4fb.js.map": "/react_study/static/js/main.190aa4fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efada985.css",
+    "static/js/main.190aa4fb.js"
+  ]
+}
