@@ -1,27 +1,32 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 
 const Todos = () => {
   const [data, setData] = useState([]);
+  const no = useRef(1);
 
   // 추가 Create
   const onAdd = (text) => {
-    setData((prevData) => [
-      ...prevData,
-      { id: prevData.length + 1, text, isChk: false },
+    setData([
+      ...data,
+      {
+        id: no.current++,
+        text,
+        isChk: false,
+      },
     ]);
   };
 
   // 삭제 Delete
   const onDel = (id) => {
-    setData((prevData) => prevData.filter((list) => list.id !== id));
+    setData(data.filter((list) => list.id !== id));
   };
 
   // 수정 Update(취소선)
   const onMod = (id) => {
-    setData((prevData) =>
-      prevData.map((list) =>
+    setData(
+      data.map((list) =>
         list.id === id ? { ...list, isChk: !list.isChk } : list
       )
     );

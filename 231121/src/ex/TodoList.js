@@ -1,4 +1,3 @@
-// TodoList.js
 import TodoItem from "./TodoItem";
 
 const TodoList = ({ data, onDel, onMod }) => {
