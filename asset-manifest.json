@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sslee1210/todos.git/static/css/main.c29461a4.css",
+    "main.js": "/sslee1210/todos.git/static/js/main.342d061b.js",
+    "index.html": "/sslee1210/todos.git/index.html",
+    "main.c29461a4.css.map": "/sslee1210/todos.git/static/css/main.c29461a4.css.map",
+    "main.342d061b.js.map": "/sslee1210/todos.git/static/js/main.342d061b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c29461a4.css",
+    "static/js/main.342d061b.js"
+  ]
+}
