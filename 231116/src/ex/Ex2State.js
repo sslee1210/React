@@ -21,7 +21,11 @@ const Ex2State = () => {
       <p>박스를 클릭할 때마다 색상1, 색상2 번갈아 나옴(토글)</p>
 
       <div
+<<<<<<< HEAD
         style={(boxStyle, { backgroundColor: bgcolor })}
+=======
+        style={{ ...boxStyle, backgroundColor: bgcolor }}
+>>>>>>> aa5ddec0e5f134ba35f8dcda6e7fb0c87f4653f0
         onClick={handleColor}>
         box color:{bgcolor}
       </div>

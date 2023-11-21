@@ -1,0 +1,214 @@
+/* FoodMenuRecommendation.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.food-menu-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #ff9999;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #ff6666;
+  animation: slideInUp 0.8s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  border: 2px solid #ffcccc;
+  border-radius: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+button {
+  background-color: #ffb366;
+  color: white;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+  animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40%,
+  43% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+}
+
+button:hover {
+  background-color: #ff8c00;
+}
+
+.recommended-menu {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffe0b3;
+  animation: slideInUp 0.8s ease;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff6666;
+  animation: fadeIn 1s ease;
+}
+
+p {
+  font-size: 1.4em;
+  color: #ff8c00;
+  animation: slideInUp 1s ease;
+}
+
+h3 {
+  font-size: 5rem;
+  position: absolute;
+  top: 3%;
+  right: 40%;
+  transition: 1s;
+  transform: rotate(-20deg);
+  animation: mov 1s infinite ease-in-out;
+}
+@keyframes mov {
+  0% {
+    transform: rotate(0) translateX(0), translateY(0);
+  }
+  25% {
+    transform: translateX(40px) translateY(-40px);
+  }
+  50% {
+    transform: translateX(20px) translateY(-20px);
+  }
+  75% {
+    transform: translateX(10px) translateY(-10px);
+  }
+  100% {
+    transform: rotate(-20deg) translateX(0), translateY(0);
+  }
+}
+
+@keyframes moveFoodProvider1 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-220vw);
+  }
+}
+@keyframes moveFoodProvider2 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(220vw);
+  }
+}
+
+h4.mov1 {
+  position: absolute;
+  top: 50%;
+  font-size: 6rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moveFoodProvider1 10s linear infinite;
+  right: -110%;
+}
+h4.mov2 {
+  position: absolute;
+  top: 30%;
+  left: -110%;
+  font-size: 6rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moveFoodProvider2 10s linear infinite;
+}
+
+h3.backtxt {
+  position: absolute;
+  width: 100%;
+  top: 18vw;
+  rotate: 20deg;
+  left: 0;
+  filter: opacity(0);
+  z-index: 1;
+  font-size: 2rem;
+  animation: back 10s linear forwards;
+}
+
+img {
+  position: absolute;
+  width: 45%;
+  left: 27%;
+  top: 40%;
+  animation: back 10s linear forwards;
+  filter: opacity(0);
+  z-index: 1;
+  pointer-events: none;
+}
+@keyframes back {
+  0% {
+    filter: opacity(0);
+  }
+
+  65% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(0.7);
+    pointer-events: visible;
+  }
+}

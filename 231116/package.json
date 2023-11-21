@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "231116",
+=======
+  "name": "231115",
+>>>>>>> aa5ddec0e5f134ba35f8dcda6e7fb0c87f4653f0
   "version": "0.1.0",
   "private": true,
   "dependencies": {

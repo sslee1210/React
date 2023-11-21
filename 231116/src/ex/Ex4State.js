@@ -6,19 +6,32 @@ const btnStyle = {
   padding: 10,
   fontWeight: "bold",
 };
+<<<<<<< HEAD
 
 const colors = [
   { id: 1, bg: "skyblue" },
   { id: 2, bg: "tomato" },
   { id: 3, bg: "salmon" },
   { id: 4, bg: "lightblue" },
+=======
+const colors = [
+  { id: 1, bg: "orange" },
+  { id: 2, bg: "tomato" },
+  { id: 3, bg: "salmon" },
+  { id: 4, bg: "lightblue" },
+  // { id: 5, bg: "maroon" },
+>>>>>>> aa5ddec0e5f134ba35f8dcda6e7fb0c87f4653f0
 ];
 
 const Ex4State = () => {
   const [name, setName] = useState("버튼1");
   const [arr, setArr] = useState(colors);
 
+<<<<<<< HEAD
   // 컬러 계열에 객체 추가
+=======
+  // 컬러 배열에 객체 추가
+>>>>>>> aa5ddec0e5f134ba35f8dcda6e7fb0c87f4653f0
   const addColor = () => {
     // const newColor = [...arr];
     // newColor[4] = { id: 5, bg: "maroon" };
@@ -43,6 +56,10 @@ const Ex4State = () => {
       <button style={btnStyle} onClick={addColor}>
         maroon 색상 추가
       </button>
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa5ddec0e5f134ba35f8dcda6e7fb0c87f4653f0
       <ul>
         {arr.map((color) => {
           const { id, bg } = color;
